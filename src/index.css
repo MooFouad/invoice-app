@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+label{
+  color: bisque;
+}
+input{
+  width: 100%;
+  padding: 6px;
+  border-radius: 15px;
+  background-color: grey;
+  text-align: center;
+}
+select{
+  width: 100%;
+  padding: 6px;
+  border-radius: 15px;
+  background-color: grey;
+  text-align: center;
+}
