@@ -15,15 +15,15 @@ const ItemInfo = ({item, setItemInfo}) => {
     }
     return ( 
         <>
-        <div className="flex justify-center flex-col  items-center min-h-[80%] min-w-[80%] absolute bg-[#0f0c2f] px-10 gap-8">
+        <div className="flex justify-center flex-col  items-center  min-w-[auto] p-10  bg-[#0f0c2f] px-10 gap-8 flex-wrap">
         {/* Invoices header & delete & update */}
-        <div className="flex justify-between   items-center w-full">
+        <div className="flex justify-between max-md:flex-col  items-center w-full">
         {/* title div */}
         <div className="flex justify-between items-start">
             <h1 className='md:text-4xl max-md:text-2xl bold'>Invoices</h1>
         </div>
         {/* remove & update btn */}
-        <div className="flex justify-center items-center gap-4">
+        <div className="flex justify-center max-md:flex-wrap items-center gap-4">
             <button 
             onClick={()=> setItemInfo(false)}
             className='bg-gray-500 py-2 px-4 rounded-full'>Close</button>
